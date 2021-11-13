@@ -23,6 +23,7 @@
         width: 280px;
     }
     .promo {
+        padding-top: 150px;
         &__title {
             width: 320px;
             margin-top: 20px;
@@ -37,6 +38,9 @@
 }
 @media (max-width: 400px) {
     .container {
-        width: 240px;
+        width: 260px;
+    }
+    .sidepanel {
+        display: none;
     }
 }
