@@ -20,7 +20,7 @@
 }
 @media (max-width: 575px) {
     .container {
-        width: 300px;
+        width: 280px;
     }
     .promo {
         &__title {
@@ -30,12 +30,13 @@
         &__title {
             font-size: 40px;
         }
-        &__subtitle {
-
-        }
     }
     .sidepanel {
         left: 40px;
+    } 
+}
+@media (max-width: 400px) {
+    .container {
+        width: 240px;
     }
-    
 }
