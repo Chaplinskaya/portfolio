@@ -82,15 +82,26 @@
 }
 @media (max-width: 400px) {
     .container {
+        width: 320px;
+    }
+    .promo__container {
         width: 300px;
     }
+    .promo__title {
+        font-size: 32px;
+    }
+    .promo__btns {
+        margin-top: 35px;
+    }
     .about__wrapper {
-        grid-template-columns: 300px;
+        grid-template-columns: 320px;
+        grid-template-rows: 200px;
+        row-gap: 20px;
     }
     .about__descr {
         padding-left: 20px;
     }
     .about__skills {
         padding-left: 20px;
-}
+    }
 }
