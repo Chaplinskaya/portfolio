@@ -54,7 +54,6 @@
     }
     .resume__wrapper {
         padding: 40px 20px 0 45px;
-        display: grid;
         grid-template-columns: repeat(2,290px);
         column-gap: 40px;
     }
@@ -86,6 +85,7 @@
     .resume__wrapper {
         grid-template-columns: 1fr;
         row-gap: 50px;
+        
     }
     .resume-body {
         font-size: 14px;
@@ -117,10 +117,16 @@
             grid-template-rows: 1fr;
             grid-template-columns: auto;
             &-item {
-                grid-template-columns: 40px 240px;
+                grid-template-columns: 40px 210px;
             }
         }
 
+    }
+    .resume__subtitle, .about__subtitle {
+            font-size: 30px;
+        }
+    .resume__wrapper {
+        padding: 20px 10px 0 10px;
     }
 }
 @media (max-width: 400px) {
