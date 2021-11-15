@@ -8,10 +8,10 @@
 }
 @media (max-width: 1200px) {
     .container {
-        width: 920px;
+        width: 900px;
     }
     .promo__container {
-        width: 700px;
+        width: 800px;
     }
     .about__wrapper {
         grid-template-columns: 370px 470px;
@@ -20,6 +20,15 @@
         grid-template: repeat(2,minmax(115px,auto))/repeat(2,200px);
         &-item {
             column-gap: 10px;
+        }
+    }
+    .resume {
+        padding-top: 50px;
+        &__wrapper {
+            padding: 60px 30px 0 30px;
+            display: grid;
+            grid-template-columns: repeat(2,370px);
+            column-gap: 70px;
         }
     }
 }
@@ -43,6 +52,21 @@
             column-gap: 20px;
         }
     }
+    .resume__wrapper {
+        padding: 40px 20px 0 45px;
+        display: grid;
+        grid-template-columns: repeat(2,290px);
+        column-gap: 40px;
+    }
+    .resume__item-head {
+        padding-top: 30px;
+    }
+    .resume__item-icon {
+        top: 30px;
+    }
+    .resume__item:before {
+        top: 48px;
+    }
 }
 @media (max-width: 767px) {
     .container {
@@ -51,10 +75,25 @@
     .about__wrapper {
         grid-template-columns: 500px;
     }
+    .about__skills {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        &-item {
+            grid-template-columns: 40px 300px;
+            column-gap: 20px;
+        }
+    }
+    .resume__wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .resume-body {
+        font-size: 14px;
+    }
 }
 @media (max-width: 575px) {
     .container {
-        width: 380px;
+        width: 370px;
     }
     .promo {
         padding-top: 150px;
@@ -72,12 +111,16 @@
     .about {
         padding-top: 50px;
         &__wrapper {
-            grid-template-columns: 380px;
+            grid-template-columns: 370px;
         }
         &__skills {
-            grid-template-rows: minmax(100px, auto);
+            grid-template-rows: 1fr;
             grid-template-columns: auto;
+            &-item {
+                grid-template-columns: 40px 240px;
+            }
         }
+
     }
 }
 @media (max-width: 400px) {
@@ -85,7 +128,8 @@
         width: 320px;
     }
     .promo__container {
-        width: 300px;
+        width: 320px;
+        padding-left: 5px;
     }
     .promo__title {
         font-size: 32px;
