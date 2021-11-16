@@ -96,9 +96,12 @@
     .resume-body {
         font-size: 14px;
     }
-    .skills__wrapper {
-        grid-template-columns: repeat(1, 1fr);
+    .skills {
+        padding-top: 50px;
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
         }
+    }
 }
 @media (max-width: 575px) {
     .container {
@@ -136,6 +139,10 @@
         }
     .resume__wrapper {
         padding: 20px 10px 0 10px;
+    }
+    .skills__subtitle {
+        font-size: 30px;
+        line-height: 45px;
     }
 }
 @media (max-width: 400px) {
