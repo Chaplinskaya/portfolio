@@ -1,7 +1,7 @@
 @media (min-width: 1440px) {
     .promo__container {
-        width: 800px;
-        margin-left: 130px;
+        //width: 800px;
+        //margin-left: 130px;
     }
     .title_fz16 {
         font-size: 20px;
@@ -22,9 +22,9 @@
         }  
     }
 }
-@media (max-width: 1439px) {
+@media (min-width: 1200px) and (max-width: 1439px) {
     .promo__container {
-        
+        margin-left: 130px;
     }
 }
 @media (max-width: 1200px) {
@@ -97,6 +97,10 @@
             font-size: 30px;
         }
     }
+    .devider {
+        margin: 15px auto 0 15px;
+        margin-top: 15px;
+    }
     .about {
         &__wrapper {
             grid-template-columns: 290px 370px;
@@ -114,20 +118,21 @@
             column-gap: 20px;
         }
     }
-    .resume__wrapper {
-        padding: 40px 20px 0 45px;
-        grid-template-columns: repeat(2,290px);
-        column-gap: 40px;
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2,320px);
+            column-gap: 50px;
+        }
+        &__item-head {
+            padding-top: 30px;
+        }
+        &__item-icon {
+            top: 30px;
+        }
+        &_item:before {
+            top: 48px;
     }
-    .resume__item-head {
-        padding-top: 30px;
-    }
-    .resume__item-icon {
-        top: 30px;
-    }
-    .resume__item:before {
-        top: 48px;
-    }
+}
     .skills {
         &__items {
             padding: 0 20px;
